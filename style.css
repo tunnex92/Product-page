@@ -29,6 +29,7 @@ nav ul{
     max-width: 500px;
     width: 100%;
     padding-left: 50px;
+    
 }
 nav ul li{
     display: flex;
@@ -36,6 +37,12 @@ nav ul li{
     justify-content: center;
     font-size: 20px;
     font-family: montserrat;
+    color: black;
+    text-decoration: none;
+   
+}
+nav ul li a{
+    text-decoration: none;
     color: black;
 }
 .portait{
@@ -166,7 +173,7 @@ aside p{
     font-size: 25px;
     font-family: montserrat;
     color: black;
-    /* background-color: red; */
+    /* background-color: rgb(251, 255, 0); */
     width: 60px;
     font-family: montserrat;
     font-weight: 700;
@@ -176,4 +183,40 @@ aside p{
     font-size: 13px;
     font-family: montserrat;
     color: grey;
+}
+.idontknow{
+    width:150px ;
+    height: 30px;
+    background-color: rgb(214, 232, 233);
+    opacity: 0.8;
+    border-radius: 7px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 25px;
+    color: orange;
+    font-weight: 500;
+}
+.buttons{
+    /* background-color: red; */
+   
+}
+button{
+    background-color: orange;
+    padding: 10px 60px;
+    border-radius: 5px;
+    border: none;
+    box-shadow: coral;
+    display: inline-block;
+    position: absolute;
+    left: 870px;
+    bottom: -15px;
+}
+button:hover{
+    background-color: greenyellow;
+}
+button a{
+    text-decoration: none;
+    color: aliceblue;
+    font-weight: 400;
 }
