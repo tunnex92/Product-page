@@ -67,8 +67,12 @@ container{
     /* padding: 15px 10px; */
 }
 main{
-    background-color: white;
+    /* background-color: red; */
     grid-area: shoe;
+    width: 500px;
+    display: grid;
+    justify-content: center;
+    align-content: center;
  }
  .navbar2{
      max-width: 200px;
@@ -82,20 +86,22 @@ main{
  }
  .mainshoe img{
     border-radius: 20px;
-    width: 75%;
-    height: 80%;
+    width: 90%;
+    height: 100%;
  }
 below{
     /* background-color: blue; */
     grid-area: below;
+    width: 500px;
 }
 aside{
     /* background-color: green; */
     grid-area: article;
+    width: 500px;
 }
 main, below, aside{
     padding: 25px 20px;
-    border:10px solid white;
+    /* border:10px solid white; */
 }
 .sub_shoe{
     padding-left: 0%;
@@ -171,21 +177,47 @@ aside p{
 }
 .price{
     font-size: 25px;
-    font-family: montserrat;
     color: black;
     /* background-color: rgb(251, 255, 0); */
-    width: 60px;
+    /* width: 60px; */
     font-family: montserrat;
     font-weight: 700;
+    float: left;
+}
+.discount button{
+    background-color: greenyellow;
+    padding: 3px 5px;
+    color: orange;
+    border-radius: 5px;
+    border:none;
+}
+.discount button:hover{
+    /* background-color: rgb(230, 138, 102)174, 174, 185); */
+}
+
+.discount{
+    font-weight: 500;
+    font-size: 20px;
+    padding-top: 5px;
+    padding-left: 20px;
+    float: left;
+    width: 50px;
+    height: 30px;
+    /* background-color: brown; */
+    color: white;
+    /* align-items: center;
+    justify-items: center; */
 }
 #idtag{
     text-decoration: line-through;
     font-size: 13px;
     font-family: montserrat;
     color: grey;
+    line-height: 1px;
+   
 }
 .idontknow{
-    width:150px ;
+    width:100px ;
     height: 30px;
     background-color: rgb(214, 232, 233);
     opacity: 0.8;
@@ -196,27 +228,60 @@ aside p{
     font-size: 25px;
     color: orange;
     font-weight: 500;
+    float: left;
 }
-.buttons{
-    /* background-color: red; */
-   
-}
-button{
-    background-color: orange;
-    padding: 10px 60px;
-    border-radius: 5px;
+.lastbutt button{
     border: none;
-    box-shadow: coral;
-    display: inline-block;
-    position: absolute;
-    left: 870px;
-    bottom: -15px;
+    border-radius: 10px;
+    justify-content: center;
+    align-content: center;
+    
+
 }
+.lastbutt{
+   
+    float: left;
+    padding: 0 30px;
+    }
 button:hover{
-    background-color: greenyellow;
+    /* background-color: greenyellow; */
 }
 button a{
     text-decoration: none;
-    color: aliceblue;
-    font-weight: 400;
+    color: white;
+    padding-top: 5px;
+    background-color: orange;
+    border-radius: 10px;
+    border: orange;
+    float: left;
+    box-shadow: 2px 4px 8px 0 coral;
+    width:100px ;
+    height: 30px;
+   
+}
+
+
+@media screen and (max-width:300px) {
+   nav{
+       width: 200px; float: left
+    } 
+    body{
+        width: 300px;
+    }
+    .navbar2{
+        width: 300px;
+    }
+    container{
+        /* background-color: red; */
+        height: 100vh;
+        width: 290px;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-areas: 
+        "shoe"
+        "below"
+        "article";
+        /* padding: 15px 10px; */
+    }
+
 }
