@@ -188,9 +188,9 @@ aside p{
     float: left;
 }
 .discount button{
-    background-color: greenyellow;
+    background-color: rgb(14, 167, 141);
     padding: 3px 5px;
-    color: orange;
+    color: whitesmoke;
     border-radius: 5px;
     border:none;
 }
@@ -238,7 +238,7 @@ aside p{
     border-radius: 10px;
     width: 200px;
     height: 30px;
-    background-color: orange;
+    background-color: rgb(14, 167, 141);
     box-shadow: 2px 4px 8px 0 coral;
 }
 .lastbutt{
